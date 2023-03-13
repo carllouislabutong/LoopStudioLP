@@ -9,14 +9,32 @@ import fromAbove from "./assets/image-from-above.jpg";
 import borealis from "./assets/image-pocket-borealis.jpg";
 import curiosity from "./assets/image-curiosity.jpg";
 import fisheye from "./assets/image-fisheye.jpg";
+import Helmet from "react-helmet";
+import logoTab from "./assets/logoTab.png";
 function App() {
   const [icons, setIcons] = useState(false);
 
-  const changeIcon = () => {
+  const handleClick = () => {
     setIcons(!icons);
+    const navChange = document.querySelector(".menu-area");
+    navChange.classList.toggle("nav-open");
+  };
+
+  const openImages = () => {
+    const img = document.querySelectorAll(".flex-items");
+    for (let i = 0; i < img.length; i++) {
+      if (img[i].classList.contains("none-image")) {
+        img[i].classList.toggle("open-image");
+      }
+    }
   };
   return (
     <div className="App">
+      <Helmet>
+        <title>Loop Studios | Home</title>
+        <meta name="Home Page" content="Home" />
+        <link rel="icon" href={logoTab} />
+      </Helmet>
       <header>
         <div className="container">
           <nav>
@@ -48,7 +66,7 @@ function App() {
                 </a>
               </li>
             </ul>
-            <div className="icon-areas" onClick={changeIcon}>
+            <div className="icon-areas" onClick={handleClick}>
               {icons ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +79,7 @@ function App() {
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>
               ) : (
@@ -76,7 +94,7 @@ function App() {
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
               )}
@@ -144,25 +162,27 @@ function App() {
                 <img src={thegrid} alt="the-grid" className="img " />
                 <p>THE GRID</p>
               </div>
-              <div className="flex-items fifth-image">
+              <div className="flex-items fifth-image none-image">
                 <img src={fromAbove} alt="the-above" className="img" />
                 <p>FROM UP ABOVE VR</p>
               </div>
-              <div className="flex-items sixth-image">
+              <div className="flex-items sixth-image none-image">
                 <img src={borealis} alt="the-above" className="img " />
                 <p>POCKET BOREALIS</p>
               </div>
-              <div className="flex-items seventh-image">
+              <div className="flex-items seventh-image none-image">
                 <img src={curiosity} alt="the-above" className="img " />
                 <p>THE CURIOSITY</p>
               </div>
-              <div className="flex-items eight-image">
+              <div className="flex-items eight-image none-image">
                 <img src={fisheye} alt="the-above" className="img " />
                 <p>MAKE IT FISH EYE</p>
               </div>
             </div>
             <div>
-              <button className="down-button">see all</button>
+              <button className="down-button" onClick={openImages}>
+                see all
+              </button>
             </div>
           </div>
         </section>
