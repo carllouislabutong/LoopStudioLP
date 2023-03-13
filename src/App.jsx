@@ -132,26 +132,33 @@ function App() {
                 <p>DEEP EARTH</p>
               </div>
 
-              <div className="flex-items">
+              <div className="flex-items second-image">
                 <img src={nightArcade} alt="night-arcade" className="img " />
+                <p>NIGHT ARCADE</p>
               </div>
-              <div className="flex-items">
+              <div className="flex-items third-image">
                 <img src={soccerteam} alt="soccer-team" className="img " />
+                <p>SOCCER TEAM VR</p>
               </div>
-              <div className="flex-items">
+              <div className="flex-items fourth-image">
                 <img src={thegrid} alt="the-grid" className="img " />
+                <p>THE GRID</p>
               </div>
-              <div className="flex-items">
+              <div className="flex-items fifth-image">
                 <img src={fromAbove} alt="the-above" className="img" />
+                <p>FROM UP ABOVE VR</p>
               </div>
-              <div className="flex-items">
+              <div className="flex-items sixth-image">
                 <img src={borealis} alt="the-above" className="img " />
+                <p>POCKET BOREALIS</p>
               </div>
-              <div className="flex-items">
+              <div className="flex-items seventh-image">
                 <img src={curiosity} alt="the-above" className="img " />
+                <p>THE CURIOSITY</p>
               </div>
-              <div className="flex-items">
+              <div className="flex-items eight-image">
                 <img src={fisheye} alt="the-above" className="img " />
+                <p>MAKE IT FISH EYE</p>
               </div>
             </div>
             <div>
@@ -160,6 +167,108 @@ function App() {
           </div>
         </section>
       </main>
+
+      <footer>
+        <section className="container bottom-flex">
+          <div className="bottom-nav">
+            <h1>loopstudios</h1>
+            <ul className="bottom-ul">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div className="social-logo">
+              {/* facebook logo */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="white"
+                  d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.19 19.19 0 0 0-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-4.598z"
+                />
+              </svg>
+              {/* twitter logo */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="30"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="white"
+                  d="M11.547 25.752c9.057 0 14.01-7.503 14.01-14.01c0-.213 0-.425-.014-.636A10.017 10.017 0 0 0 28 8.556a9.827 9.827 0 0 1-2.828.776a4.942 4.942 0 0 0 2.164-2.724a9.866 9.866 0 0 1-3.126 1.195a4.929 4.929 0 0 0-8.392 4.491A13.98 13.98 0 0 1 5.67 7.15a4.928 4.928 0 0 0 1.525 6.573a4.887 4.887 0 0 1-2.235-.617v.063a4.926 4.926 0 0 0 3.95 4.827a4.917 4.917 0 0 1-2.223.084a4.93 4.93 0 0 0 4.6 3.42A9.88 9.88 0 0 1 4 23.54a13.94 13.94 0 0 0 7.547 2.209"
+                />
+              </svg>
+              {/* pinterest logo */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="white"
+                  d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7v-.03Z"
+                />
+              </svg>
+              {/* instagram logo */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="30"
+                viewBox="0 0 48 48"
+              >
+                <g fill="none">
+                  <path
+                    stroke="white"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                    d="M34 6H14a8 8 0 0 0-8 8v20a8 8 0 0 0 8 8h20a8 8 0 0 0 8-8V14a8 8 0 0 0-8-8Z"
+                  />
+                  <path
+                    stroke="white"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                    d="M24 32a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"
+                  />
+                  <path fill="white" d="M35 15a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                </g>
+              </svg>
+            </div>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="12    "
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="white"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462c.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467c-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638c1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+                />
+              </svg>
+              2021 Loopstudios. All rights reserved
+            </p>
+          </div>
+        </section>
+      </footer>
     </div>
   );
 }

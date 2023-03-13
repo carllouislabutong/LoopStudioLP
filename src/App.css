@@ -245,12 +245,156 @@ nav {
   position: absolute;
 }
 
+.first-image {
+  position: relative;
+}
+
+.second-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2.1rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.second-image {
+  position: relative;
+}
+
+.third-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2.1rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.third-image {
+  position: relative;
+}
+
+.fourth-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2.1rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.fourth-image {
+  position: relative;
+}
+
+.fifth-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.fifth-image {
+  position: relative;
+}
+
+.sixth-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2.1rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.sixth-image {
+  position: relative;
+}
+
+.seventh-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2.1rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.seventh-image {
+  position: relative;
+}
+
+.eight-image p {
+  color: white;
+  z-index: 1;
+  font-size: 2.1rem;
+  width: 50%;
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+}
+
+.eight-image {
+  position: relative;
+}
+
 .img:hover {
   transform: scale(1.1);
 }
 
 
+/* ////////////////   FOOTER   ////////////////// */
+footer {
+  background-color: var(--Black);
+  color: var(--White);
+  font-family: var(--fontfamily);
+  margin-top: 15rem;
 
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 30px 0 0 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  flex: 1 1 900px;
+}
+
+.bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+.social-logo {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.bottom-nav {
+  flex-wrap: wrap;
+}
+
+.bottom-flex p {
+  margin-top: 30px;
+}
 
 
 
@@ -336,7 +480,94 @@ nav {
     position: absolute;
   }
 
+  .second-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .third-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .fourth-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .fifth-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .sixth-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .seventh-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .eight-image p {
+    color: white;
+    z-index: 1;
+    font-size: 1.4rem;
+    width: 40%;
+    bottom: 1rem;
+    left: 2rem;
+    position: absolute;
+  }
+
   .second-section div h1 {
     text-align: center;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-flex {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .social-logo {
+    justify-content: center;
+    margin-top: 30px;
+
   }
 }
