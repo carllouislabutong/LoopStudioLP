@@ -180,6 +180,11 @@ nav {
 
 }
 
+.second-section button a {
+  text-decoration: none;
+  list-style: none;
+}
+
 .down-button {
   background: transparent;
   border: 3px solid black;

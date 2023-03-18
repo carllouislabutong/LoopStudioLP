@@ -13,6 +13,7 @@ import Helmet from "react-helmet";
 import logoTab from "./assets/logoTab.png";
 function App() {
   const [icons, setIcons] = useState(false);
+  const [changeWord, setChangeWord] = useState(false);
 
   const handleClick = () => {
     setIcons(!icons);
@@ -25,6 +26,7 @@ function App() {
     for (let i = 0; i < img.length; i++) {
       if (img[i].classList.contains("none-image")) {
         img[i].classList.toggle("open-image");
+        setChangeWord(!changeWord);
       }
     }
   };
@@ -136,7 +138,7 @@ function App() {
           </div>
         </section>
 
-        <section className="second-section">
+        <section className="second-section" id="second-section">
           <div className="container">
             <div className="flex-area">
               <h1>our creations</h1>
@@ -181,7 +183,10 @@ function App() {
             </div>
             <div>
               <button className="down-button" onClick={openImages}>
-                see all
+                <a href="#second-section">
+                  {" "}
+                  {changeWord ? "See less" : " See more"}
+                </a>
               </button>
             </div>
           </div>
